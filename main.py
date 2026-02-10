@@ -31,6 +31,7 @@ CLOCK = pygame.time.Clock()
 playing_mode = True
 
 hit_sound =  pygame.mixer.Sound("hit.wav")
+bomp_sound =  pygame.mixer.Sound("zap.wav")
 
 
 running = True
@@ -69,6 +70,7 @@ while running:
             bomb_rect.x = random_x
             bomb_rect.y = 0
             lives -= 1
+            bomp_sound.play()
 
         if bomb_rect.bottom >= 640:
             random_x = random.randint(80, 920)
