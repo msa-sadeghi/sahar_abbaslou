@@ -1,6 +1,6 @@
 import pygame
 pygame.init()
-from player import Player
+from old.player import Player
 
 my_player = Player(100, 100, 5, "player1")
 player_2 = Player(300, 100, 4 , "player2")
